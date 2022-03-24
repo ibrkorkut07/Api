@@ -13,6 +13,7 @@ import static io.restassured.RestAssured.given;
 
 public class PostRequestPojo02 extends HerOkuAppBaseUrl {
 
+    // https://www.jsonschema2pojo.org
         /*
       {
      "bookingid": 11,
