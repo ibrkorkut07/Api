@@ -3,19 +3,19 @@ package utilities;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
+
 import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
 public class Authentication {
-
+/*
     public static void main(String[] args) {
         String guncelToken = generateToken();
         System.out.println(guncelToken);
     }
-
+*/
     public static String generateToken() {
         String username = "Batch44Api";
         String password = "Batch44+";
@@ -30,6 +30,7 @@ public class Authentication {
 
         JsonPath token = response.jsonPath();
 
+        //id_token "https://www.gmibank.com/api/authenticate" adresindeki response'tan geldi.
         return token.getString("id_token");
     }
 }
