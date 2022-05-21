@@ -74,6 +74,5 @@ Olduğunu Object Mapper kullanarak test edin
                         ,"id",equalTo(expectedData.get("id"))
                         ,"title",equalTo(expectedData.get("title"))
                         ,"completed",equalTo(expectedData.get("completed")));
-
     }
 }
